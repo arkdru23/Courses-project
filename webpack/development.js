@@ -1,7 +1,7 @@
 module.exports = {
 	devServer: {
 		contentBase: "./public",
-		port: 3000,
+		port: 3002,
 	},
 	devtool: "inline-source-map",
 	module: {
@@ -14,7 +14,7 @@ module.exports = {
 						loader: "css-loader",
 						options: {
 							modules: {
-								loacalIdentName: "[local]",
+								localIdentName: "[local]",
 							},
 						},
 					},
