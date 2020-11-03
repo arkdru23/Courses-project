@@ -43,7 +43,7 @@ const Modal = ({
 		return () => {
 			modal.removeEventListener("cancel", handleCancel);
 		};
-	}, handleOnClose);
+	}, [handleOnClose]);
 
 	const handleOutsideClick = ({ target }) => {
 		const { current } = modalRef;
